@@ -6,7 +6,7 @@ class TransactionModel {
   TransactionModel(
       {required this.id, required this.candidateId, this.createdDate});
 
-  factory TransactionModel.fromJson(Map<String, String> data) {
+  factory TransactionModel.fromJson(Map<String, dynamic> data) {
     return TransactionModel(id: data['id']!, candidateId: data['candidateId']!);
   }
 
