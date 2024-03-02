@@ -10,7 +10,7 @@ class TransactionModel {
     return TransactionModel(id: data['id']!, candidateId: data['candidateId']!);
   }
 
-  Map<String, String> toJson(TransactionModel transactionModel) {
+  Map<String, dynamic> toJson(TransactionModel transactionModel) {
     return {
       "id": transactionModel.id,
       "candidateId": transactionModel.candidateId
