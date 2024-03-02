@@ -13,3 +13,7 @@ dependencies:
 dev_dependencies:
   lints: ^2.1.0
   test: ^1.24.0
+
+
+scripts:
+  push: "git add . && git commit -m 'models updated' && git push"
