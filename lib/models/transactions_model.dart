@@ -1,13 +1,20 @@
 class TransactionModel {
   final int id;
   final int candidateId;
+  final String status;
   final DateTime? createdDate;
 
   TransactionModel(
-      {required this.id, required this.candidateId, this.createdDate});
+      {required this.id,
+      required this.candidateId,
+      this.createdDate,
+      required this.status});
 
   factory TransactionModel.fromJson(Map<String, dynamic> data) {
-    return TransactionModel(id: data['id'], candidateId: data['candidateId']);
+    return TransactionModel(
+        id: data['id'],
+        candidateId: data['candidateId'],
+        status: data['status']);
   }
 
   Map<String, dynamic> toJson(TransactionModel transactionModel) {
