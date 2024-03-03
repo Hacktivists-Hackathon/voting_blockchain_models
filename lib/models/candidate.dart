@@ -1,15 +1,16 @@
-class Candidate {
+class CandidateModel {
   final int id;
   final String name;
   final int votes;
 
-  Candidate({required this.id, required this.name, required this.votes});
+  CandidateModel({required this.id, required this.name, required this.votes});
 
-  factory Candidate.fromJson(Map<String, dynamic> data) {
-    return Candidate(id: data['id'], name: data['name'], votes: data['votes']);
+  factory CandidateModel.fromJson(Map<String, dynamic> data) {
+    return CandidateModel(
+        id: data['id'], name: data['name'], votes: data['votes']);
   }
 
-  Map<String, dynamic> toJson(Candidate candidate) {
+  Map<String, dynamic> toJson(CandidateModel candidate) {
     return {
       "id": candidate.id,
       "name": candidate.name,
