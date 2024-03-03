@@ -17,7 +17,7 @@ class TransactionModel {
         status: data['status']);
   }
 
-  Map<String, dynamic> toJson(TransactionModel transactionModel) {
+  static Map<String, dynamic> toJson(TransactionModel transactionModel) {
     return {
       "id": transactionModel.id,
       "candidateId": transactionModel.candidateId

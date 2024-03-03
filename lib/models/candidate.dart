@@ -10,7 +10,7 @@ class CandidateModel {
         id: data['id'], name: data['name'], votes: data['votes']);
   }
 
-  Map<String, dynamic> toJson(CandidateModel candidate) {
+  static Map<String, dynamic> toJson(CandidateModel candidate) {
     return {
       "id": candidate.id,
       "name": candidate.name,
