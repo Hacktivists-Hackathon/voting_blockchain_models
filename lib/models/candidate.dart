@@ -12,9 +12,9 @@ class CandidateModel {
 
   static Map<String, dynamic> toJson(CandidateModel candidate) {
     return {
-      "id": candidate.id,
-      "name": candidate.name,
-      "votes": candidate.votes
+      "id": "${candidate.id}",
+      "name": "${candidate.name}",
+      "votes": "${candidate.votes}"
     };
   }
 }
