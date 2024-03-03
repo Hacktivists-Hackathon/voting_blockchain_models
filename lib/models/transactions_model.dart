@@ -1,6 +1,6 @@
 class TransactionModel {
-  final String id;
-  final String candidateId;
+  final int id;
+  final int candidateId;
   final DateTime? createdDate;
 
   TransactionModel(
